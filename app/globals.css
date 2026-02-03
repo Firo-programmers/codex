@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 240 10% 98%;
+  --foreground: 240 10% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 10%;
+  --primary: 262 83% 58%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 6% 90%;
+  --secondary-foreground: 240 10% 10%;
+  --muted: 240 5% 92%;
+  --muted-foreground: 240 4% 46%;
+  --accent: 199 89% 48%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 240 6% 85%;
+  --input: 240 6% 85%;
+  --ring: 262 83% 58%;
+  --radius: 1rem;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary via-indigo-500 to-accent bg-clip-text text-transparent;
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight;
+}
+
+.section-subtitle {
+  @apply mt-2 text-muted-foreground;
+}
